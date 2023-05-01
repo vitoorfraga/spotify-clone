@@ -1,0 +1,301 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  max-height: 90%;
+}
+
+.wrapper > .sidebar {
+  max-width: 18.5rem;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+
+  padding: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.sidebar > .header {
+  padding: 1rem;
+  background-color: var(--gray-400);
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.sidebar > .header .button {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: .5rem;
+
+  color: var(--white-600);
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: color .3s ease;
+}
+
+.sidebar > .header .button:hover {
+  color: var(--white-200);
+}
+
+.sidebar > .library {
+  padding: 1rem;
+  background-color: var(--gray-400);
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.library .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.libButton {
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--white-600);
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: .5rem;
+
+  transition: color .3s ease;
+}
+
+.libButton:hover {
+  color: var(--white-200);
+  cursor: pointer;
+}
+
+.library > .header .actions {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
+.library > .header .actions button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+
+  color: var(--white-600);
+
+  width: 1.7rem;
+  height: 1.7rem;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: content-box;
+  padding: .150rem;
+  
+  transition: background .3s ease;
+}
+
+.library > .header .actions button:hover {
+  color: var(--white-200);
+  background-color: var(--gray-500);
+  cursor: pointer;
+}
+
+
+/* ==> Filtros */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .4rem;
+  
+}
+
+.tagsWrapper {
+  margin-top: .5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .4rem;
+
+  position: relative;
+
+
+  width: 100%;
+}
+
+.filters .tag, .tagsWrapper .lastTag {
+  color: var(--white-600);
+  border: none;
+  outline: none;
+  background-color: var(--gray-100);
+
+  padding: .5rem .875rem;
+
+  border-radius: 16px;
+
+  color: var(--white-600);
+
+  transition: filter .3s ease;
+}
+
+.filters .tag:hover, .tagsWrapper .lastTag:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.tagsWrapper .lastTag {
+  background: rgb(39,39,39);
+  background: -moz-linear-gradient(90deg, rgba(39,39,39,1) 34%, rgba(18,18,18,1) 92%);
+  background: -webkit-linear-gradient(90deg, rgba(39,39,39,1) 34%, rgba(18,18,18,1) 92%);
+  background: linear-gradient(90deg, rgba(39,39,39,1) 34%, rgba(18,18,18,1) 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#272727",endColorstr="#121212",GradientType=1);
+}
+
+.tagsWrapper .next {
+
+  outline: none;
+  border: none;
+
+  position: absolute;
+  right: 0;
+
+  background-color: transparent;
+  color: var(--white-600);
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: content-box;
+  padding: .1rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: var(--gray-100);
+}
+
+
+.filter .optionsWrapper {
+  background-color: red;
+}
+
+/* => Playlists */
+
+.library {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+
+}
+
+.library .playlists {
+  margin: .6rem 0;
+  height: 100%;
+
+}
+
+.playlists .optionsWrapper {
+  margin: .6rem 0 .8rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlistsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== CONTENT ===== */
+.content {
+  background: rgb(13,57,79);
+  background: linear-gradient(180deg, rgba(13,57,79,1) 15%, rgba(18,18,18,1) 65%);
+
+
+  border-radius: 8px;
+  width: 100%;
+  
+  margin-right: .6rem;
+  padding: 0 1rem;
+  margin: .5rem .5rem .5rem 0;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: var(--gray-400);
+}
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+.content::-webkit-scrollbar-thumb {
+  height: 80px;
+  border-radius: 8px;
+  background: #f4f4f470;
+}
+
+.content > h1 {
+  font-size: 1.8rem;
+  margin: 1rem 0 4rem 0;
+
+}
+
+.content > .playlists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 3fr));
+  gap: 1rem 1.3rem;
+}
+
+/* Feito Para... */
+.forYou {
+  margin: 3rem 0;
+}
+
+.forYou .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forYou .top a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--white-600);
+}
+
+.forYou > .playlists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 6fr));
+  gap: 1.5rem;
+}
+
+/* ==== Footer ===== */
+.footer {
+  grid: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

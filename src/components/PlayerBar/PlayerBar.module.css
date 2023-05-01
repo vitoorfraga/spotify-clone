@@ -1,0 +1,45 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.currentMusic {
+
+
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+}
+
+.thumb {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.currentMusic img {
+  border-radius: 4px;
+}
+
+
+.title {
+  font-size: 0.75rem;
+  line-height: 105%;
+  display: block;
+}
+
+.artist {
+  color: var(--white-600);
+  font-size: 0.687rem;
+
+  display: block;
+}
+
+.title:hover, .artist:hover {
+  text-decoration: underline;
+}

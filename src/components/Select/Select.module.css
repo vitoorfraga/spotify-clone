@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+}
+
+.wrapper button {
+  background-color: transparent;
+  color: var(--white-600);
+
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.wrapper button:hover {
+  color: var(--white-200);
+}
+
+.options {
+  position: absolute;
+  top: 1.8rem;
+  width: 12rem;
+  
+  background-color: var(--gray-200);
+  padding: 0.2rem;
+
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.options ul li {
+  list-style: none;
+}
+
+.description {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--white-600);
+  padding-left: .4rem;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+
+  height: 1.875rem;
+
+}
+
+.option, .active {
+  font-size: .8rem;
+  text-align: left;
+  width: 100%;
+  min-height: 1.875rem;
+
+  color: var(--white-200);
+
+  padding: .8rem 0.2rem .8rem .6rem;
+
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.active {
+  color: var(--green-400) !important;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: #3e3e3e;
+  border-radius: 4px;
+}

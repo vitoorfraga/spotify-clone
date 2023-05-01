@@ -1,0 +1,9 @@
+.text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

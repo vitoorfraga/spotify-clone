@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .9rem;
+}
+
+
+.action {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--white-600);
+}
+
+.action:hover {
+  color: var(--white-400);
+}
+
+.actionWithBackground svg {
+  margin-left: 0.187rem;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: .1rem;
+}
+
+.bottom span {
+  color: var(--white-600);
+  font-size: 0.625rem;
+}
+
+.volumeBar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  
+  border: none;
+  outline: none;
+  color: var(--white-600);
+}
+
+.volumeBar .bar {
+  width: 5rem;
+  height: 4px;
+  border-radius: 8px;
+  margin-left: 8px;
+
+  background-color: red;
+
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 62%, rgba(42,42,42,1) 62%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 62%, rgba(42,42,42,1) 62%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 62%, rgba(42,42,42,1) 62%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#2a2a2a",GradientType=1);
+}

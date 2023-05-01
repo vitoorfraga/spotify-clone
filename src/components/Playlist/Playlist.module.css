@@ -1,0 +1,153 @@
+.wrapper {
+  width: 100%;
+  height: 3.438;
+
+  padding: .4rem;
+
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  border-radius: 4px;
+
+  transition: background .3s ease;
+}
+
+.wrapper:hover {
+  cursor: pointer;
+  background-color: var(--gray-50);
+}
+
+ .thumb {
+  width: 50px;
+  height: 50px;
+
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 100%;
+}
+
+.description {
+  color: var(--white-600);
+  font-size: 0.75rem;
+}
+
+/* ===== Apenas Thumb E titulo da playlist no formato Horizontal */
+
+.thumbAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #2a2a2a59;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+.thumbAndTitle:hover {
+  
+  background-color: var(--gray-200);
+}
+
+.thumbAndTitle .thumb {
+  width: 80px;
+  height: 80px;
+
+}
+
+.thumbAndTitle .title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ===== Title, Description, Thumb in Vertical Align */
+.thumbTitleAndDescription {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  /* height: 300px; */
+  background-color: #181818;
+  padding: 1rem;
+  border-radius: 8px;
+
+  position: relative;
+
+  transition: background .3s ease;
+}
+
+.thumbTitleAndDescription:hover{  
+  cursor: pointer;
+  background-color: #282828
+}
+
+.thumbTitleAndDescription:hover .play {
+  display: flex;
+}
+
+.thumbTitleAndDescription > .thumb {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.thumbTitleAndDescription > .thumb img {
+  display: block;
+  width: 100%;
+  height: 164px;
+  box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.3);
+}
+
+.play {
+
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background-color: var(--green-400);
+
+  box-shadow: 0px -3px 23px 13px rgba(0,0,0,0.3);
+  box-sizing: content-box;
+}
+
+.play:hover {
+  border: 1px solid var(--green-400);
+  filter: brightness(1.1);
+}
+
+.play svg {
+  margin-left: 4px;
+}
+
+.thumbTitleAndDescription .title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.thumbTitleAndDescription .description {
+  display: block;
+  line-height: 150%;
+
+  margin-top: 1rem;
+  max-height: 2.5rem;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
