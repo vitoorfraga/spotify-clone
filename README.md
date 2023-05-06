@@ -1,5 +1,5 @@
 # Spotify Interface Clone 📦
-CLone da nova interface Web do Spotify (2023).
+Clone da nova interface Web do Spotify (2023).
 
 
 ## Tecnologias Utilizadas 💻
